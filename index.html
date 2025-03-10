@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Integration Assessment</title>
+    <title>ICT934 - Week 1 - Tutorial</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,14 +45,17 @@
         }
         .info-field label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             font-weight: bold;
         }
         .info-field input {
             width: 100%;
+            box-sizing: border-box; /* This ensures padding doesn't increase width */
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            margin-top: 5px; /* Add space between label and input */
+            height: 40px; /* Set a fixed height */
         }
         .question {
             margin-bottom: 30px;
@@ -66,6 +69,7 @@
         }
         textarea {
             width: 100%;
+            box-sizing: border-box;
             min-height: 100px;
             margin-top: 10px;
             padding: 10px;
@@ -99,7 +103,7 @@
             .no-print {
                 display: none;
             }
-            textarea {
+            textarea, input {
                 border: none;
                 resize: none;
                 outline: none;
@@ -124,7 +128,7 @@
         <div class="progress-bar" id="progressBar"></div>
     </div>
     
-    <h1>System Integration Assessment</h1>
+    <h1>ICT934 - Week 1 - Tutorial</h1>
     
     <form id="quizForm">
         <div class="student-info">
@@ -169,7 +173,6 @@
         </div>
         
         <div class="button-container no-print">
-            <button type="button" id="printBtn">Print Answers</button>
             <button type="submit" id="submitBtn">Submit</button>
         </div>
     </form>
